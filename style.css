@@ -2,11 +2,15 @@ body, html{
   height:100%;
   margin:0;
   font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   line-height:1.8em;
   color:#666;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+ }
 
 .pimg1, .pimg2, .pimg3{
   position:relative;
@@ -23,12 +27,12 @@ body, html{
 }
 
 .pimg2{
-  background-image:url('Rabia_Omer-752.jpg');
+  background-image:url('Rabia_Omer-752.JPG');
   min-height:400px;
 }
 
 .pimg3{
-  background-image:url('IMG_0542.jpg');
+  background-image:url('IMG_0542.JPG');
   min-height:400px;
 }
 
@@ -37,14 +41,10 @@ body, html{
   padding:50px 80px;
 }
 
-.section-light{
-  background-color:#f4f4f4;
-  color:#666;
-}
-
 .section-dark{
-  background-color:#282e34;
-  color:#ddd;
+  background-color:#101820FF;
+  color:#F2AA4CFF;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .ptext{
@@ -52,15 +52,14 @@ body, html{
   top:50%;
   width:100%;
   text-align:center;
-  color:#000;
   font-size:27px;
   letter-spacing:8px;
   text-transform:uppercase;
 }
 
 .ptext .border{
-  background-color:#111;
-  color:#fff;
+  background-color:#101820FF;
+  color:#F2AA4CFF;
   padding:20px;
 }
 
@@ -72,4 +71,30 @@ body, html{
   .pimg1, .pimg2, .pimg3{
     background-attachment:scroll;
   }
+}
+
+.scrollable-element {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+ 
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  overflow: overlay;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+  border-radius: 20px;   
+  
+}
+
+img {
+  border-radius: 50%;
 }
